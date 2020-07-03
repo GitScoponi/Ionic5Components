@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>text to speech</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input expand="block" placeholder="Digite algo para falar" [(ngModel)]="texto"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="speaker()">Teste</ion-button>
+</ion-content>

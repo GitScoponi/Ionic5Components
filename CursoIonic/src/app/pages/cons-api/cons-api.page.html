@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Consumindo API Correios</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+<ion-item>
+  <ion-label position="stacked">CEP</ion-label>
+  <ion-input [(ngModel)]="cep"></ion-input>
+</ion-item>
+<ion-button expand="block" (click)="consultarCEP()">Consultar</ion-button>
+<ion-item>
+  <ion-label position="stacked">Bairro</ion-label>
+  <ion-input readonly>{{resultado.bairro}}</ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Logradouro</ion-label>
+  <ion-input readonly>{{resultado.logradouro}}</ion-input>
+</ion-item>
+  <ion-item>
+  <ion-label position="stacked">Cidade</ion-label>
+  <ion-input readonly>{{resultado.localidade}}</ion-input>
+</ion-item>
+</ion-content>
